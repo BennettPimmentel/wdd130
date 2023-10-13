@@ -13,15 +13,15 @@ main section {
 
 #background {
     height: 725px;
-    background-color: #3498db; 
+    background-color: #EC7505; 
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: #e6af2e;
 }
 
 header {
-    background-color: rgba(20, 30, 13, 0.7);
+    background-color: #3D348B;
 }
 
 nav a:hover {
@@ -30,7 +30,7 @@ nav a:hover {
 
 .book,
 .join {
-    background-color: #27ae60; 
+    background-color: #EC7505; 
 }
 
 .book:hover,
@@ -39,7 +39,7 @@ nav a:hover {
 }
 
 .msg {
-    background-color: #ecf0f1; 
+   background-color: #D58936; 
 }
 
 nav a,
@@ -55,7 +55,7 @@ h4,
 footer,
 footer a,
 footer a:hover {
-    color: #333; 
+    color: #ffffff; 
 }
 
 .icon {
