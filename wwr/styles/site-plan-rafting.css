@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+
+body {
+  font-family: var('Kode Mono');
+  max-width: 960px;
+  padding: 20px;
+}
+
+:root {
+  --primari-color: #004e64;
+  --secondary-color: #00a5cf;
+  --accent1-color: #9fffcb;
+  --accent2-color: #25a18e;
+
+  --heading-fond: 'Kode Mono', monospace;
+  --paragraph-fond: 'Kode Mono', monospace;
+
+  --nav-background-color: #004e64;
+  --nav-link-color: #003559;
+  --nav-hover-link-color: #25a18e;
+  --nav-hover-background-color: #9fffcb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(#25a18e);
+  color: var(#003559);
+}
+
+header {
+  padding: 20px;
+  background-color: var(#004e64);
+}
+
+p {
+  padding: 25px; 
+}
+
+nav {
+  background-color: var(#004e64);
+  font-size: 1.2rem;
+display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(#003559);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(#003559);
+}
+
+nav a:hover {
+  color: var(#25a18e);
+  background-color: var(#9fffcb);
+}
