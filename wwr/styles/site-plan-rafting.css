@@ -56,3 +56,9 @@ nav a:hover {
   color: var(#25a18e);
   background-color: var(#9fffcb);
 }
+
+.hero img {
+  Display: block;
+  width: 100%;
+  height: auto;
+}
