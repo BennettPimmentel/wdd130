@@ -1,0 +1,115 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1e3a5f;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    color: white;
+    text-align: center;
+}
+
+.hero article img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+/* History Section */
+.history {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.history h2 {
+    color: #d9534f;
+    font-size: 2rem;
+}
+
+/* Adventure Section */
+.adventure {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.adventure h2 {
+    color: #f0ad4e;
+    font-size: 2rem;
+}
+
+.adventure img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+}
+
+.adventure p {
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 40px;
+    margin: 5px;
+}
