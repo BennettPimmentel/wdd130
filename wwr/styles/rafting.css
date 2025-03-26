@@ -12,20 +12,20 @@ header {
     background-color: #fff;
     padding: 10px 50px;
     border-bottom: 2px solid #ccc;
-    position: relative; /* Mantiene la estructura flexible */
+    position: relative; 
 }
 
 .logo {
     width: 100px;
-    margin-left: 400px; /* Mantiene la posición del logo */
+    margin-left: 400px; 
 }
 
 nav {
     position: absolute;
-    left: 50%; /* Lo mueve hacia el centro */
-    transform: translateX(-50%); /* Lo centra exactamente */
+    left: 50%; 
+    transform: translateX(-50%); 
     display: flex;
-    gap: 30px; /* Espacio entre los ítems */
+    gap: 30px; 
 }
 
 nav a {
@@ -121,9 +121,9 @@ footer p {
 
 .social-links {
     display: flex;
-    justify-content: flex-start; /* Alinea los iconos a la izquierda */
+    justify-content: flex-start; 
     align-items: center;
-    margin-left: 800px; /* Ajusta según sea necesario */
+    margin-left: 800px; 
 }
 
 .social-links img {
@@ -156,49 +156,40 @@ footer p {
 .history-content {
     display: flex;
     align-items: center;
-    /* Alinea verticalmente */
     justify-content: space-between;
-    /* Separa los elementos */
     gap: 20px;
-    /* Espaciado entre los elementos */
     max-width: 900px;
-    /* Ajusta según el diseño */
     margin: 0 auto;
-    /* Centra la sección */
 }
 
 .history-content p {
     width: 30%;
-    /* Ajusta el ancho del texto */
     text-align: justify;
-    /* Justifica el texto */
 }
 
 .history-content img {
     width: 35%;
-    /* Ajusta el tamaño de la imagen */
     max-width: 300px;
-    /* Evita que sea demasiado grande */
     height: auto;
     border-radius: 10px;
 }
 
 .gallery {
     display: flex;
-    justify-content: center; /* Centra las imágenes horizontalmente */
+    justify-content: center; 
     align-items: center;
-    gap: 20px; /* Espacio entre imágenes */
+    gap: 20px; 
     padding: 20px;
     max-width: 100%;
-    flex-wrap: wrap; /* Asegura que se ajusten en pantallas pequeñas */
+    flex-wrap: wrap; 
 }
 
 .gallery figure {
-    text-align: center; /* Centra el texto debajo de cada imagen */
+    text-align: center; 
 }
 
 .gallery img {
-    width: 150px; /* Tamaño ajustado de imágenes */
+    width: 150px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
