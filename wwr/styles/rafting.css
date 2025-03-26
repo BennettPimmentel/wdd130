@@ -7,22 +7,32 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 10px 50px;
     border-bottom: 2px solid #ccc;
+    position: relative; /* Mantiene la estructura flexible */
 }
 
 .logo {
     width: 100px;
+    margin-left: 400px; /* Mantiene la posición del logo */
+}
+
+nav {
+    position: absolute;
+    left: 50%; /* Lo mueve hacia el centro */
+    transform: translateX(-50%); /* Lo centra exactamente */
+    display: flex;
+    gap: 30px; /* Espacio entre los ítems */
 }
 
 nav a {
-    margin: 0 15px;
     text-decoration: none;
     color: #1e3a5f;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .hero {
@@ -96,14 +106,100 @@ nav a {
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1e3a5f;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
     margin-top: 20px;
+}
+
+footer p {
+    margin-left: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start; /* Alinea los iconos a la izquierda */
+    align-items: center;
+    margin-left: 800px; /* Ajusta según sea necesario */
 }
 
 .social-links img {
     width: 40px;
-    margin: 5px;
+    margin-left: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero article img {
+    width: 120px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente */
+    justify-content: space-between;
+    /* Separa los elementos */
+    gap: 20px;
+    /* Espaciado entre los elementos */
+    max-width: 900px;
+    /* Ajusta según el diseño */
+    margin: 0 auto;
+    /* Centra la sección */
+}
+
+.history-content p {
+    width: 30%;
+    /* Ajusta el ancho del texto */
+    text-align: justify;
+    /* Justifica el texto */
+}
+
+.history-content img {
+    width: 35%;
+    /* Ajusta el tamaño de la imagen */
+    max-width: 300px;
+    /* Evita que sea demasiado grande */
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;
+    gap: 20px; /* Espacio entre imágenes */
+    padding: 20px;
+    max-width: 100%;
+    flex-wrap: wrap; /* Asegura que se ajusten en pantallas pequeñas */
+}
+
+.gallery figure {
+    text-align: center; /* Centra el texto debajo de cada imagen */
+}
+
+.gallery img {
+    width: 150px; /* Tamaño ajustado de imágenes */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
