@@ -63,33 +63,40 @@
     </div>
 </section>
 
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="submit-form.php" method="POST">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-            
-                <label for="inquiry">Purpose of Inquiry:</label>
-                <label for="general-inquiry">General Inquiry</label>
-                <input type="radio" id="general-inquiry" name="inquiry" value="general" required>
+<section class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form action="submit-form.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
 
-                <label for="reservation-question">Reservation Question</label>
-                <input type="radio" id="reservation-question" name="inquiry" value="reservation">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
 
-                <label for="website-suggestion">Website Suggestion</label>
-                <input type="radio" id="website-suggestion" name="inquiry" value="suggestion">
-            
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            
-                <label><input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter</label>
-            
-                <button type="submit">Submit Your Message</button>
-            </form>            
-        </section>
+        <fieldset>
+            <legend>Purpose of Inquiry:</legend>
+            <label for="general-inquiry">
+                <input type="radio" id="general-inquiry" name="inquiry" value="general" required> General Inquiry
+            </label>
+
+            <label for="reservation-question">
+                <input type="radio" id="reservation-question" name="inquiry" value="reservation"> Reservation Question
+            </label>
+
+            <label for="website-suggestion">
+                <input type="radio" id="website-suggestion" name="inquiry" value="suggestion"> Website Suggestion
+            </label>
+        </fieldset>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Submit Your Message</button>
+    </form>            
+</section>
 </main>
     <footer>
         <p>&copy; 2025 White Water Rafting | Designed by Bennett Pimentel</p>
