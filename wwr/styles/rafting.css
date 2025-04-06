@@ -214,6 +214,10 @@ footer p {
     text-align: center;
 }
 
+.contact-info .map iframe {
+    border: none;
+}
+
 .employee-profiles {
     background-color: #fff;
     padding: 2rem;
