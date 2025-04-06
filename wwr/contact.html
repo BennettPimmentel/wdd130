@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Whitewater Rafting for inquiries, reservations, or suggestions. Find our contact details, location, and employee information here.">
+    <meta name="author" content="Bennett Pimentel">
+    <title>Contact Us - Whitewater Rafting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/z-crossedoars.jpeg" alt="White Water Rafting Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main> 
+        <div class="hero">
+            <img src="images/14.jpeg" alt="Contact background" class="hero-img">
+            <div class="hero-text">
+                <h1>Contact Us</h1>
+                <p>We’d love to hear from you! Whether you have an inquiry, reservation question, or a suggestion for us, feel free to reach out.</p>
+            </div>
+        </div>
+
+      <section class="contact-info">
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1099693.4609432695!2d-112.02554678383137!3d40.419865238558884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874da5ac6cb4d5d1%3A0x4c10d97d586290be!2sPro%20Rafting%20Tours!5e0!3m2!1sen!2spe!4v1743651862313!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="address">
+        <h2>Rafting place</h2>
+        <p><strong>Boston, United States</strong></p>
+        <p>123 Rafting Ave</p>
+        <p>789-703-0000</p>
+        <p><a href="mailto:@company.com">raftingsupport@company.com</a></p>
+    </div>
+    <section class="employee-profiles">
+        <div class="employees">
+            <div class="employee">
+                <img src="images/10.jpeg" alt="Employee 1">
+                <p>John Doe<br><small>Rafting Guide</small></p>
+            </div>
+            <div class="employee">
+                <img src="images/11.jpeg" alt="Employee 2">
+                <p>Jane Smith<br><small>River Safety Expert</small></p>
+            </div>
+            <div class="employee">
+                <img src="images/12.jpg" alt="Employee 3">
+                <p>Mike Johnson<br><small>Adventure Guide</small></p>
+            </div>
+        </div>
+    </section>
+    
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="inquiry">Purpose of Inquiry:</label>
+                <label><input type="radio" name="inquiry" value="general" required> General Inquiry</label>
+                <label><input type="radio" name="inquiry" value="reservation"> Reservation Question</label>
+                <label><input type="radio" name="inquiry" value="suggestion"> Website Suggestion</label>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Submit Your Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 White Water Rafting | Designed by Bennett Pimentel</p>
+        <nav class="social-links">
+            <a href="https://facebook.com"><img src="images/f.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/t.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/i.png" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+</html>
