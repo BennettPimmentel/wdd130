@@ -14,19 +14,114 @@
   --aside-margin: 1rem auto;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--background-light);
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: var(--padding-medium);
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+  border: var(--border-dark);
+  padding: var(--padding-small);
+  box-shadow: var(--box-shadow);
+}
+
 nav {
   background-color: var(--primary-color);
   padding: var(--padding-medium);
+  display: flex;
+  justify-content: center;
 }
 
 nav a {
   color: var(--secondary-color);
-  display: block;
+  text-decoration: none;
   padding: var(--padding-large);
+  font-weight: bold;
 }
 
-h1 {
+nav a:hover {
+  background-color: var(--text-color);
   color: var(--primary-color);
+}
+
+main {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+  padding: var(--padding-medium);
+  text-align: center; /* Asegura que el contenido dentro de main esté centrado */
+}
+
+main img {
+  margin: 0 auto; /* Esto centra la imagen */
+  display: block; /* Hace que la imagen sea un bloque para centrarse */
+}
+
+
+section {
+  margin-bottom: var(--padding-large);
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 70%;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  margin-top: 15px;
+  border-top: var(--border-dark);
+  text-align: center;
+  padding: var(--padding-medium);
+}
+
+aside {
+  width: var(--aside-width);
+  margin: var(--aside-margin);
+  border: var(--border-light);
+  padding: var(--padding-medium);
+  background-color: var(--background-light);
+  color: var(--text-color);
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+  margin-bottom: var(--padding-medium);
+}
+
+p {
+  padding: 0;
+  line-height: 1.6;
+  margin-bottom: var(--padding-medium);
 }
 
 img {
@@ -37,31 +132,21 @@ img {
   box-shadow: var(--box-shadow);
 }
 
-p {
-  padding: 0;
-}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
 
-main {
-  max-width: var(--max-width-content);
-}
+  nav {
+    flex-direction: column;
+  }
 
-aside {
-  width: var(--aside-width);
-  margin: var(--aside-margin);
-  border: 1px solid var(--border-light);
-  padding: var(--padding-medium);
-  background-color: var(--background-light);
-  color: var(--text-color);
-  text-align: center;
-}
+  aside {
+    width: 100%;
+    margin: var(--padding-small) auto;
+  }
 
-aside img {
-  width: 200px;
-  height: auto;
-}
-
-footer {
-  margin-top: 15px;
-  border-top: var(--border-dark);
-  text-align: center;
+  .hero {
+    height: 250px;
+  }
 }
